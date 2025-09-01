@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quiz – Contratação sem Vieses (4 Níveis)</title>
+  <link rel="stylesheet" href="./src/css/style-quiz.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <h1>Quiz – Contratação Sem Vieses</h1>
+          <div class="subtitle" id="playerWelcome">Bem-vindo(a), Jogador!</div>
+        </div>
+      </div>
+    </header>
+
+    <section class="card" id="meta">
+      <div class="level-head">
+        <div>
+          <div class="badge" id="levelBadge">Nível 1 de 4</div>
+          <div class="muted">Responda todas as questões do nível para avançar. Não exibimos pontuação parcial.</div>
+        </div>
+        <div class="badge">Critério de aprovação: <b>≥ 70%</b></div>
+      </div>
+      <div class="progress" aria-label="Progresso">
+        <div class="bar" id="progressBar"></div>
+      </div>
+    </section>
+
+    <!-- ===== NÍVEL 1 ===== -->
+    <section class="card" id="level1">
+      <div class="level-head">
+        <h2>Nível 1 – Contexto e Situação</h2>
+        <span class="badge">Cada acerto vale 1 ponto</span>
+      </div>
+      <form id="form1">
+        <p class="q">1.1 — Tatuagens visíveis influenciam sua decisão?</p>
+        <fieldset class="opts">
+          <label class="opt"><input required type="radio" name="q11" value="I"> Sim — tatuagens visíveis podem impactar
+            a imagem profissional.</label>
+          <label class="opt"><input type="radio" name="q11" value="C"> Não — tatuagens não influenciam minha
+            decisão.</label>
+          <label class="opt"><input type="radio" name="q11" value="N"> Talvez — depende do tipo de tatuagem e do
+            ambiente de trabalho.</label>
+        </fieldset>
+
+        <p class="q">1.2 — Universidade igual pesa na escolha?</p>
+        <fieldset class="opts">
+          <label class="opt"><input required type="radio" name="q12" value="I"> Sim — isso cria mais confiança e
+            conexão.</label>
+          <label class="opt"><input type="radio" name="q12" value="C"> Não — avalio apenas competências e
+            experiências.</label>
+          <label class="opt"><input type="radio" name="q12" value="N"> Talvez — poderia ser um fator de desempate, mas
+            não determinante.</label>
+        </fieldset>
+
+        <p class="q">1.3 — Sotaque forte afetaria como ele é visto pela equipe?</p>
+        <fieldset class="opts">
+          <label class="opt"><input required type="radio" name="q13" value="I"> Sim — pode gerar dificuldades de
+            comunicação ou preconceito.</label>
+          <label class="opt"><input type="radio" name="q13" value="C"> Não — não acredito que isso afete a percepção da
+            equipe.</label>
+          <label class="opt"><input type="radio" name="q13" value="N"> Talvez — depende da função e da cultura da
+            empresa.</label>
+        </fieldset>
+
+        <p class="q">1.4 — Pessoa mais velha para vaga que exige aprendizado rápido. Sua reação inicial:</p>
+        <fieldset class="opts">
+          <label class="opt"><input required type="radio" name="q14" value="I"> Idade pode dificultar a adaptação a
+            novas tecnologias.</label>
+          <label class="opt"><input type="radio" name="q14" value="C"> Idade não influencia na capacidade de
+            aprender.</label>
+          <label class="opt"><input type="radio" name="q14" value="N"> Depende do histórico de aprendizado e atualização
+            da pessoa.</label>
+        </fieldset>
+
+        <p class="q">1.5 — Roupas formais vs casuais. Que impressão causa?</p>
+        <fieldset class="opts">
+          <label class="opt"><input required type="radio" name="q15" value="I"> Roupas mais formais transmitem mais
+            profissionalismo.</label>
+          <label class="opt"><input type="radio" name="q15" value="C"> A vestimenta não influencia minha
+            avaliação.</label>
+          <label class="opt"><input type="radio" name="q15" value="N"> Pode influenciar levemente, mas não decide a
+            contratação.</label>
+        </fieldset>
+
+        <div class="btns">
+          <button class="primary" type="submit">Concluir Nível 1</button>
+          <button class="ghost" type="reset">Limpar</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- ===== NÍVEL 2 ===== -->
+    <section class="card hidden" id="level2">
+      <div class="level-head">
+        <h2>Nível 2 – Detecção de Vieses Específicos</h2>
+        <span class="badge">Cada acerto vale 1 ponto</span>
+      </div>
+      <form id="form2">
+        <p class="q">2.1 — Pessoas introvertidas são menos eficientes em trabalhos em equipe?</p>
+        <fieldset class="opts">
+          <label class="opt"><input required type="radio" name="q21" value="I"> Sim — introversão pode limitar
+            interação.</label>
+          <label class="opt"><input type="radio" name="q21" value="C"> Não — introversão não define eficiência.</label>
+          <label class="opt"><input type="radio" name="q21" value="N"> Talvez — depende do contexto e das habilidades
+            sociais.</label>
+        </fieldset>
+
+        <p class="q">2.2 — Você associa cargos de liderança a um gênero específico?</p>
+        <fieldset class="opts">
+          <label class="opt"><input required type="radio" name="q22" value="I"> Sim — inconscientemente associo.</label>
+          <label class="opt"><input type="radio" name="q22" value="C"> Não — liderança independe de gênero.</label>
+          <label class="opt"><input type="radio" name="q22" value="N"> Talvez — pode influenciar em alguns
+            casos.</label>
+        </fieldset>
+
+        <p class="q">2.3 — Um candidato com lacunas no histórico de trabalho é menos confiável?</p>
+        <fieldset class="opts">
+          <label class="opt"><input required type="radio" name="q23" value="I"> Sim — lacunas podem indicar
+            instabilidade.</label>
+          <label class="opt"><input type="radio" name="q23" value="C"> Não — existem diversos motivos legítimos para
+            lacunas.</label>
+          <label class="opt"><input type="radio" name="q23" value="N"> Talvez — depende da explicação dada.</label>
+        </fieldset>
+
+        <p class="q">2.4 — Você assume que um candidato com deficiência não conseguirá desempenhar todas as funções do
+          cargo?</p>
+        <fieldset class="opts">
+          <label class="opt"><input required type="radio" name="q24" value="I"> Sim — acredito que limitações podem
+            impactar.</label>
+          <label class="opt"><input type="radio" name="q24" value="C"> Não — acredito que adaptações tornam
+            possível.</label>
+          <label class="opt"><input type="radio" name="q24" value="N"> Talvez — depende das funções e recursos
+            disponíveis.</label>
+        </fieldset>
+
+        <p class="q">2.5 — Candidatos estrangeiros terão mais dificuldades de adaptação?</p>
+        <fieldset class="opts">
+          <label class="opt"><input required type="radio" name="q25" value="I"> Sim — barreiras culturais e de idioma
+            podem atrapalhar.</label>
+          <label class="opt"><input type="radio" name="q25" value="C"> Não — adaptação não está ligada à
+            nacionalidade.</label>
+          <label class="opt"><input type="radio" name="q25" value="N"> Talvez — depende da experiência prévia e contexto
+            da empresa.</label>
+        </fieldset>
+
+        <div class="btns">
+          <button class="primary" type="submit">Concluir Nível 2</button>
+          <button class="ghost" type="reset">Limpar</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- ===== NÍVEL 3 ===== -->
+    <section class="card hidden" id="level3">
+      <div class="level-head">
+        <h2>Nível 3 – Reflexão e Feedback</h2>
+        <span class="badge">Cada acerto vale 1 ponto</span>
+      </div>
+      <form id="form3">
+        <p class="q">3.1 — Um amigo te descreveria como recrutador totalmente imparcial?</p>
+        <fieldset class="opts">
+          <label class="opt"><input required type="radio" name="q31" value="I"> Sim — sempre tomo decisões
+            imparciais.</label>
+          <label class="opt"><input type="radio" name="q31" value="C"> Não — reconheço que posso ter
+            preferências.</label>
+          <label class="opt"><input type="radio" name="q31" value="N"> Talvez — tento ser imparcial, mas às vezes é
+            difícil.</label>
+        </fieldset>
+
+        <p class="q">3.2 — Você já se pegou escolhendo alguém "parecido" com você para uma vaga?</p>
+        <fieldset class="opts">
+          <label class="opt"><input required type="radio" name="q32" value="I"> Sim — percebi isso em algumas
+            decisões.</label>
+          <label class="opt"><input type="radio" name="q32" value="C"> Não — não deixo afinidades pessoais
+            influenciarem.</label>
+          <label class="opt"><input type="radio" name="q32" value="N"> Talvez — pode ter acontecido
+            inconscientemente.</label>
+        </fieldset>
+
+        <p class="q">3.3 — Diversidade é prioridade ou apenas um diferencial?</p>
+        <fieldset class="opts">
+          <label class="opt"><input required type="radio" name="q33" value="C"> É prioridade e faz parte da
+            estratégia.</label>
+          <label class="opt"><input type="radio" name="q33" value="N"> É importante, mas não é determinante.</label>
+          <label class="opt"><input type="radio" name="q33" value="I"> Não considero um fator essencial.</label>
+        </fieldset>
+
+        <p class="q">3.4 — Você costuma buscar justificativas técnicas para decisões baseadas em impressões pessoais?
+        </p>
+        <fieldset class="opts">
+          <label class="opt"><input required type="radio" name="q34" value="I"> Sim — faço isso com frequência.</label>
+          <label class="opt"><input type="radio" name="q34" value="C"> Não — minhas decisões são sempre
+            técnicas.</label>
+          <label class="opt"><input type="radio" name="q34" value="N"> Talvez — pode ocorrer em alguns casos.</label>
+        </fieldset>
+
+        <div class="btns">
+          <button class="primary" type="submit">Concluir Nível 3</button>
+          <button class="ghost" type="reset">Limpar</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- ===== NÍVEL 4 ===== -->
+    <section class="card hidden" id="level4">
+      <div class="level-head">
+        <h2>Nível 4 – Pontos de Discussão para Feedback</h2>
+        <span class="badge">Cada acerto vale 1 ponto</span>
+      </div>
+      <form id="form4">
+        <p class="q">4.1 — O que é mais importante: experiência prévia ou potencial de aprendizado?</p>
+        <fieldset class="opts">
+          <label class="opt"><input required type="radio" name="q41" value="I"> Experiência prévia.</label>
+          <label class="opt"><input type="radio" name="q41" value="C"> Potencial de aprendizado.</label>
+          <label class="opt"><input type="radio" name="q41" value="N"> Depende do cargo e do contexto.</label>
+        </fieldset>
+
+        <p class="q">4.2 — Aparência influencia credibilidade? Por quê?</p>
+        <fieldset class="opts">
+          <label class="opt"><input required type="radio" name="q42" value="I"> Sim — porque a aparência pode gerar
+            impressão positiva ou negativa.</label>
+          <label class="opt"><input type="radio" name="q42" value="C"> Não — a credibilidade vem de atitudes e
+            resultados, não da aparência.</label>
+          <label class="opt"><input type="radio" name="q42" value="N"> Talvez — o impacto depende do contexto, cultura e
+            setor.</label>
+        </fieldset>
+
+        <p class="q">4.3 — Sua primeira impressão moldou a análise?</p>
+        <fieldset class="opts">
+          <label class="opt"><input required type="radio" name="q43" value="I"> Sim — contou muito e moldou boa parte da
+            avaliação.</label>
+          <label class="opt"><input type="radio" name="q43" value="C"> Não — consegui avaliar com mente aberta.</label>
+          <label class="opt"><input type="radio" name="q43" value="N"> Talvez — influenciou, mas busquei equilibrar com
+            outros aspectos.</label>
+        </fieldset>
+
+        <p class="q">4.4 — Você já mudou de opinião sobre alguém após conhecê-lo melhor?</p>
+        <fieldset class="opts">
+          <label class="opt"><input required type="radio" name="q44" value="C"> Sim — já mudei várias vezes.</label>
+          <label class="opt"><input type="radio" name="q44" value="N"> Talvez — aconteceu em alguns casos.</label>
+          <label class="opt"><input type="radio" name="q44" value="I"> Não — normalmente mantenho minha primeira
+            impressão.</label>
+        </fieldset>
+
+        <div class="btns">
+          <button class="secondary" type="submit">Concluir Nível 4</button>
+          <button class="ghost" type="reset">Limpar</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- ===== RESULTADO FINAL ===== -->
+    <section class="card hidden" id="final">
+      <h2>Resultado Final</h2>
+      <p id="finalTag" class="final-tag"></p>
+      <p>Total obtido: <b id="finalScore">0</b> / <b id="finalMax">18</b> pontos — <span id="finalPct">0%</span></p>
+      <div class="btns">
+        <button class="ghost" id="btnReiniciar">Reiniciar Quiz</button>
+      </div>
+    </section>
+
+    <div class="footer">Projeto educativo para contratação sem vieses · Visual chamativo e resultado apenas ao final.
+    </div>
+  </div>
+
+  <div class="confetti" id="confetti"></div>
+
+  <script src="./src/script/script.js"></script>
+</body>
+
+</html>
