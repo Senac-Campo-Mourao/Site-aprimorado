@@ -169,6 +169,7 @@ h1 {
 .opts {
   display: grid;
   gap: 0.75rem;
+  border: none;
 }
 
 .opt {
